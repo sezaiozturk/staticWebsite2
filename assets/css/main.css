@@ -1,0 +1,110 @@
+@font-face {
+    font-family:inter-regular ;
+    src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family:inter-light ;
+    src: url("../fonts/Inter-Light.ttf");
+}
+@font-face {
+    font-family:inter-semibold ;
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 100%;
+    font-family: inter-regular;
+}
+.header-table {
+    display: table;
+    width: 100%;
+}
+.header-table-cell {
+    background-color: white;
+    display: table-cell;
+    width: 100%;
+    padding: 10px;
+}
+.header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.header-content-container {
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    gap: 10px;
+    display: flex;
+}
+.click-event:hover {
+    opacity: 0.75;
+    cursor: pointer;
+    user-select: none;
+}
+.click-event:active {
+    transform: translateY(2px);
+    transition: transform 0.1s;
+    user-select: none;
+}
+button {
+    font-family: inter-semibold;
+    padding: 12px 60px;
+    border-radius: 50px;
+    border: none;
+    border: 2px solid red;
+    user-select: none;
+    background-color: red;
+}
+button.filled {
+    background-color: red;
+    color: white;
+}
+button.outline {
+    background-color: transparent;
+    color: red;
+}
+button.ghost {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: red;
+}
+.header-content {
+    flex-direction: column;
+    gap: 4px;
+    display: flex;
+}
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.header-content span:nth-child(1) {
+    font-family: inter-semibold;
+    font-size: 22px;
+    color: red;
+}
+.header-content span:nth-child(2) {
+    font-family: inter-regular;
+    font-size: 18px;
+    color: #2E2E2E;
+}
+a {
+    text-decoration: none;
+    color: #232323;
+}
+a:hover {
+    user-select: none;
+    color: red;
+}
+.nav-container {
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+    display: flex;
+}

@@ -1,0 +1,67 @@
+.welcome-container {
+    background-image: url("../images/arkaplan.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+}
+.welcome-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.welcome-content-container {
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    left: 40px;
+    gap: 20px;
+}
+.welcome-content-container span:nth-child(1) {
+    font-family: inter-regular;
+    color: white;
+    font-size: 26px;
+}
+.welcome-content-container span:nth-child(2) {
+    font-family: inter-light;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+.broadcast-banner-container {
+    background-image: linear-gradient(90.45deg, #FF001F 0%, #470009 100%);
+    font-family: inter-semibold;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    display: flex;
+    color: white;
+    gap: 10px;
+    user-select: none;
+}
+.broadcast-indicator {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.broadcast-indicator span {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
