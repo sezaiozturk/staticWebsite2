@@ -66,39 +66,6 @@
     border-radius: 50%;
     position: absolute;
 }
-.section-title {
-    font-size: 34px;
-    color: #212121;
-    font-family: inter-bold ;
-    margin-bottom: 40px;
-} 
-.section-container {
-    box-sizing: border-box;
-    width: 100%;
-    height: 75%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-}
-.section-content-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-@media screen and (max-width:800px) {
-    .section-container {
-        height: auto;
-    }
-    .section-content-container { 
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 .what-is-caycore-content-container p {
     text-align: justify;
     max-width: 80% ;
