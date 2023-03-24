@@ -10,6 +10,14 @@
     font-family:inter-semibold ;
     src: url("../fonts/Inter-SemiBold.ttf");
 }
+@font-face {
+    font-family:inter-bold ;
+    src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+    font-family:inter-medium ;
+    src: url("../fonts/Inter-Medium.ttf");
+}
 * {
     margin: 0;
     padding: 0;
@@ -107,4 +115,17 @@ a:hover {
     gap: 10px;
     user-select: none;
     display: flex;
+}
+.footer-container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.footer-logo {
+    width: 50px;
 }
