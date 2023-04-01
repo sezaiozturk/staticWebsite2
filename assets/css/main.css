@@ -70,7 +70,7 @@ button {
     background-color: red;
 }
 button.fill-container {
-    width: 100%;
+    width: 100%; 
 }
 button.filled {
     background-color: red;
@@ -141,7 +141,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 @media screen and (max-width:800px) {
     .section-container {
