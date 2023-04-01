@@ -143,6 +143,101 @@ a:hover {
     align-items: center;
     gap: 20px;
 }
+.mobile-menu-button {
+    display: none;
+}
+.mobile-menu-button :hover {
+    cursor: pointer;
+}
+.side-menu-container {
+    transform: translateX(-101%);
+    transition: transform 1s;
+    user-select:none ;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.side-menu-filter {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    z-index: 99991;
+    height: 100%;
+    width: 100%;
+}
+.side-menu-container.isActive {
+    transform: translateX(0%);
+    transition: transform 1s;
+}
+.side-menu-container .side-menu-content-container{
+    background-color: white;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99992;
+    display: flex;
+    padding: 20px;
+    cursor: auto;
+    height: 100%; 
+    width:25em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.side-menu-container a {
+    padding: 20px;
+}
+.side-menu-filter:hover {
+    cursor: pointer;
+}
+.side-menu-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px ;
+    padding: 0px 20px;
+}
+.side-menu-header-container > span {
+    font-family: inter-semibold ;
+   font-size: 24px;
+    
+}
+.side-menu-header-container img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+.side-menu-header-container img:hover {
+    cursor: pointer;
+}
+.seperator {
+    width: 100%;
+    height : 1px;
+    background-color: rgba(0, 0, 0,0.25);
+}
+.side-menu-seperator {
+    margin-bottom: 10px;
+}
+@media screen and (max-width:950px) {
+    .mobile-menu-button {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .mobile-menu-button:hover {
+        cursor: pointer;
+    }
+    .mobile-menu-button img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-container {
+        display: none;
+    }
+}
 @media screen and (max-width:800px) {
     .section-container {
         height: auto;
@@ -222,3 +317,4 @@ a:hover {
 .footer-logo {
     width: 50px;
 }
+

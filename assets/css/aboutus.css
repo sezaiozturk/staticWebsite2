@@ -26,15 +26,25 @@
 .aboutus-image-line >div:hover {
     cursor: pointer;
 }
-.aboutus-image-line >div:hover>div {
+.aboutus-image-line >div:nth-child(1):hover>div {
     transform: translateX(0%);
     transition: transform 0.5s;
 }
+.aboutus-image-line >div:nth-child(2):hover>div {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+.aboutus-image-line >div:nth-child(1)>div {
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+}
+.aboutus-image-line >div:nth-child(2)>div {
+    transition: transform 0.5s;
+    transform: translateX(100%);
+}
 .aboutus-image-line >div>div {
     background-color: rgba(13, 13, 13, 0.5);
-    transform: translateX(-100%);
     backdrop-filter: blur(4px); 
-    transition: transform 0.5s;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;

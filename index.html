@@ -59,6 +59,12 @@
                             İletişim
                         </a>
                     </div>
+                    <div 
+                        class="mobile-menu-button"
+                        onclick="toggleMenu()"
+                    >
+                        <img src="./assets/icons/menu.png"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,6 +156,45 @@
                 class="footer-logo "
             />
             <span id="copryright-text"></span>
+        </div>
+        <div 
+            class="side-menu-container"
+            id="side-menu"
+         >
+         <div 
+            class="side-menu-filter"
+            onclick="toggleMenu()"
+         ></div>
+            <div class="side-menu-content-container">
+                <div
+                    class="side-menu-header-container"
+                >
+                    <span>Menü</span>
+                    <img src="./assets/icons/close.svg "/>
+                </div>
+                <div class="seperator side-menu-seperator"></div>
+                <a
+                    id="m-index"
+                    href="index.html"
+                    class="click-event"
+                >
+                    Ana sayfa
+                </a>
+                <a
+                    id="m-aboutus"
+                    href="aboutus.html"
+                    class="click-event"
+                >
+                    Hakkımızda
+                </a>
+                <a
+                    id="m-contact"
+                    href="contact.html"
+                    class="click-event"
+                >
+                    İletişim
+                </a>
+            </div>
         </div>
         <script
             src="./assets/js/menu.js"
